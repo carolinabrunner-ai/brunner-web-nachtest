@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nachtest</title>
+</head>
+<body style="background-color: mint green;">
+<h1>Carolina Brunner- 5R</h1>
+<h2>Geografische Fakten</h2>
+<p>
+  Traumstadt: Stockholm<br>
+  Einwohnerzahlen: 975000
+</p>
+<h2>Top 3 Sehenswürdigkeiten</h2>
+<ol>
+  <li>Gamla Stan</li>
+  <li>Vasa Museum</li>
+  <li>Stockholmer Schloss</li>
+</ol>
+<h2> Kulinarische Spezialitäten</h2>
+<ul id="liste-essen"></ul>
+  <script>
+const essen = ["Köttbullar", "Zimtschnecken", "Gravlax", "Schweden"];  // Regionale Sepzialitäten und das Land der Stadt
+  const liste = document.getElementById("liste-essen");
+  essen.forEach(h => {
+    let li = document.createElement("li");
+    li.textContent = h;
+    liste.appendChild(li);
+  });
+</script>
+  <h2>Visueller Eindruck</h2>
